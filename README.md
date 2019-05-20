@@ -3,12 +3,39 @@
 Egy cég 10 olyan autóval rendelkezik, amelyet a dolgozók igénybe vehetnek az üzleti ügyeik intézésére. Az autókat akár többnapos útra is elvihetik, illetve egy autót egy nap több dolgozó is elvihet. A rendszer az autók parkolóból való ki- és behajtását rögzíti. A parkoló a hónap minden napján 7-23 óra között van nyitva, csak ebben az időszakban lehet elvinni és visszahozni az autókat. Az autót mindig annak a dolgozónak kell visszahoznia, amelyik elvitte. Egyszerre csak egy autó lehet minden dolgozónál.
 Az `autok.txt` fájl egy hónap (30 nap) adatait rögzíti. Egy sorban szóközökkel elválasztva
 6 adat található az alábbi sorrendben.
-| nap                 | egész szám (1-30)                   | a hónap adott napja                         |
-| óra:perc            | szöveg (óó:pp formátumban)          | a ki- vagy a behajtás időpontja             |
-| rendszám            | 6 karakteres szöveg (CEG300-CEG309) | az autó rendszáma                           |
-| személy azonosítója | egész szám (500-600)                | az autót igénybe vevő dolgozó azonosítója   |
-| km számláló         | egész szám                          | a km számláló állása                        |
-| ki/be hajtás        | egész szám (0 vagy 1)               | a parkolóból kihajtáskor 0, a behajtáskor 1 |
+<table>
+    <tr>
+		<td>nap</td>
+		<td>egész szám (1-30)</td>
+		<td>a hónap adott napja</td>
+    </tr>
+    <tr>
+		<td>óra:perc</td>
+		<td>szöveg (óó:pp formátumban)</td>
+		<td>a ki- vagy a behajtás időpontja</td>
+    </tr>
+    <tr>
+		<td>rendszám</td>
+		<td>6 karakteres szöveg (CEG300-CEG309)</td>
+		<td>az autó rendszáma</td>
+    </tr>
+    <tr>
+		<td>személy azonosítója</td>
+		<td>egész szám (500-600)</td>
+		<td>az autót igénybe vevő dolgozó azonosítója</td>
+    </tr>
+    <tr>
+		<td>km számláló</td>
+		<td>egész szám</td>
+		<td>a km számláló állása</td>
+    </tr>
+    <tr>
+		<td>ki/be hajtás</td>
+		<td>egész szám (0 vagy 1)</td>
+		<td>a parkolóból kihajtáskor 0, a behajtáskor 1</td>
+    </tr>
+</table>
+
 sorok száma legfeljebb 500. Az adatok a napok szerint, azon belül óra és perc szerint rendezettek. Továbbá tudjuk, hogy a hónap első napján a cég mind a tíz autója a parkolóban volt.
 Például:
   ```
